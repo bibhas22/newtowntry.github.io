@@ -4,10 +4,16 @@
 
 <style>
 
-body {background-image: url('votingpage.jpg');;
+body {background-image: url('login.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed; 
       background-size: 100% 100%;}
+
+th {font-size: 25px; color: solidblack;}
+
+td {font-size: 25px; color: solidblack;}
+
+Caption{font-size: 12 px}
 
 h1 {text-align: center}
 
@@ -15,25 +21,99 @@ h1 {text-align: center}
 
 <body>
 
-<h1>NKDA Sarod Sera Somman 2020</h1>
+<h1>NKDA Sharad Samman 2020</h1>
 
-<h3>Your vote has been registered. You can now <strong>Verify</strong> your vote or <strong>Finish</strong>.</h3>
+<form>
 
-<table style="width:50%">
+<table style="width:65%">
+    
   <tr>
 
-    <th>To Verify Your Vote click:</th>
-    <td><a href="verify.html"><button>Verify Vote</button></a>
+   <th></th>
+    
 
   </tr>
-  <tr>
+ 
 
-    <th>To Finish Your Voting:</th>
-    <td><a href="thankyou.html"><button>Log Out</button></a>
+  <tr>
+      <th>
+
+         <label for="idol">Best Idol  :</label></th>
+         <td><input type="text" id="idol" name="idol" font-size: 20px >
+
+      </td>
+
+   </tr>
+
+
+
+  <tr>   
+   
+ 
+   <th>
+
+         <label for="pandal">Best Pandal:</label></th>
+          <td><input type="text" id="pandal" name="pandal" font-size: 20px>
+
+   </td>
+
+   
+
+  </tr>
+
+
+
+  <tr>
+  
+   <th>
+
+         <label for="green">Green Puja :</label> </th>
+         <td> <input type="text" id="puja" name="greenpuja" font-size: 20px>
+
+   </td>
+
+   
+  </tr>
+
+
+
+  <tr>
+ 
+   <th>
+
+   
+         <label for="overall" >Overall    :</label></th>
+          <td><input type="text" id="overall" name="overall" font-size: 20px>
+
+   </td>
+
+   
 
   </tr>
 
 </table>
+
+</form>
+
+<table style="width:50%">
+  <tr>
+
+    <th>Confirm Vote:</th>
+    <td><a href="thankyou.html"><button>Confirm</button></a>
+
+  </tr>
+
+
+    
+  <tr>
+
+    <th>Cancel Vote:</th>
+    <td><a href="choice.html"><button>Cancel</button></a>
+
+  </tr>
+
+</table>
+
 
 </body>
 </html>
