@@ -8,9 +8,11 @@ body {background-image: url('login.jpg');
       background-attachment: fixed; 
       background-size: 100% 100%;}
 
-h1 {text-align: center}
+h1 {text-align: center; font-family: courier, serif;}
 
 h3 {text-align: center}
+
+footer {text-align: center}
 
 form {text-align: left;}
 
@@ -23,25 +25,20 @@ form {text-align: left;}
 <h3>Login to your account</h3>
 <h1><br></br></h1>
 
-<form>
+<form action="otpv.html">
 
   <label for="phone" style="font-size:25px">Mobile:</label><br>
-  <input type="tel" id="phone" name="phone" placeholder="10 digit mobile no." maxlength="10" style="font-size:20px"><br>
-  <label for="pwd" style="font-size:25px">Password:</label><br>
-  <input type="password" id="pwd" name="pwd" style="font-size:20px"><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="10 digit mobile no." maxlength="10" required style="font-size:20px"><br>
+
+  <input type="submit" value="Login">
  
 </form>
 
-<table style="width:50%">
-  
-
-  <tr>
-
-    <td><a href="verify.html"><button>Verify your Vote</button></a></td>
-
-  </tr>
-
-</table>
+<footer>
+  <h1>NKDA </h1>
+  <h3>Privacy Policy  |  Terms and Conditions</h3>
+  <h3>FAQ</h3>
+</footer>
 
 </body>
 </html>
