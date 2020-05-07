@@ -8,13 +8,17 @@ body {background-image: url('mail.jpg');
       background-attachment: fixed; 
       background-size: 100% 100%;}
 
-h1 {text-align: right}
+h1 {text-align: right; font-family: courier, serif;}
+
+h2 {text-align: center; font-family: courier, serif;}
 
 h3 {text-align: right}
 
 form {text-align: right}
 
-p {text-align: right}
+p {text-align: center}
+
+footer {text-align: center}
 
 </style>
 
@@ -26,13 +30,18 @@ p {text-align: right}
 
 <form action="mailto:bibhukaka@gmail.com" method="post" enctype="text/plain">
 Mobile:
-<input type="tel name="phone"><br>
-E-mail:
-<input type="text" name="mail"><br>
+<input type="tel name="phone" required><br>
 Issues:
-<textarea name="address" rows="5" cols="20"></textarea><br><br>
+<textarea name="address" rows="5" cols="20" required></textarea><br><br>
 <input type="submit" value="Send">
 </form>
+
+
+<footer>
+  <h2>NKDA </h2>
+  <p><b>Privacy Policy  |  Terms and Conditions</b></p>
+  <p><b>FAQ</b></p>
+</footer>
 
 </body>
 </html>
