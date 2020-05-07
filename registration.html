@@ -8,15 +8,17 @@ body {background-image: url('registration.png');
       background-attachment: fixed; 
       background-size: 100% 100%;}
 
-th {font-size: 25px; color: solidblack;}
+th {font-size: 25px; color: solidblack; font-family: courier, serif;}
 
 td {font-size: 25px; color: solidblack;}
 
-h1 {text-align: center}
+h1 {text-align: center; font-family: courier, serif;}
 
 h3 {text-align: center}
 
 p  {text-align: center}
+
+footer {text-align: center}
 
 </style>
 
@@ -26,7 +28,7 @@ p  {text-align: center}
 <h1>NKDA Sharad Samman 2020</h1>
 <h3>Register yourself to vote for the Serar Sera Puja 2020</h3>
 
-<form>
+<form action="otp.html">
 
 <table style="width:70%">
 
@@ -34,50 +36,42 @@ p  {text-align: center}
   <td></td>
   <th></th>
   <th><label for="fullname">Name:</label></th>
-  <td><input type="text" id="fullname" name="fullname" required></td>
+  <td><input type="text" id="fullname" name="fullname" placeholder="your name as to be stored"required></td>
  </tr>
 
  <tr>
   <td></td>
   <th></th>
   <th><label for="phone">Mobile:</label></th>
-  <td><input type="tel" id="phone" name="phone" maxlength="10"></td>
+  <td><input type="tel" id="phone" name="phone" placeholder="10 digit mobile no." maxlength="10" required></td>
  </tr>
 
- <tr>
-  <td></td>
-  <th></th>
-  <th><label for="email">E-mail id:</label></th>
-  <td><input type="email" id="email" name="email"></td>
- </tr>
-
+ 
  <tr>
   <td></td>
   <th></th>
   <th><label for="address">Address:</label></th>
-  <td><textarea name="address" rows="10" cols="30"></textarea></td>
+  <td><textarea name="address" rows="10" cols="30" placeholder="mention your pin" required></textarea></td>
  </tr>
   
 <tr>
   <td></td>
   <th></th>
-  <th><label for="pwd">Password:</label></th>
-  <td><input type="password" id="pwd" name="pwd"></td>
- </tr>
-
-<tr>
+  <th><input type="submit" value="Register"></th>
   <td></td>
-  <th></th>
-  <th><label for="pwd">Confirm Password:</label></th>
-  <td><input type="password" id="pwd" name="pwd"></td>
  </tr>
 
 </table>
 
 </form>
+<h1>------------- OR ---------------</h1>
+<p>Already a member: <a href="login.html"> Login</a></p>
 
-<p><a href="otp.html"><button>Continue to Vote</button></a></p>
-
+<footer>
+  <h1>NKDA </h1>
+  <h3>Privacy Policy  |  Terms and Conditions</h3>
+  <h3>FAQ</h3>
+</footer>
 
 
 </body>
